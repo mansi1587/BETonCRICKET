@@ -6,6 +6,8 @@
     <title>BETonCRICKET</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
         .logo-text{
             font-weight: bolder;
@@ -49,19 +51,55 @@
     padding: 5px 10px; /* Adds some padding for better aesthetics */
     display: inline-block;
         }
-        .betting-banner {
+        .brush-container {
     position: absolute;
-    top: 40%;
+    left: 60%; /* Adjust to overlay "compare bonuses" */
+    top: -10px; /* Move slightly up */
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 12rem;
+    margin-left: -16rem;
+}
+
+.brush-img {
+    width: 150px; /* Reduce size */
+    height: auto;
+    display: block;
+}
+
+.brush-text {
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(-10deg);
-    background: url('brush-stroke.png') no-repeat center;
-    background-size: contain;
-    padding: 10px 30px;
+    transform: translate(-50%, -50%) rotate(-5deg);
     color: white;
     font-weight: bold;
-    font-size: 18px;
-    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+   
 }
+ svg.brush-svg{
+    margin-top: -9rem;
+}
+.brush-text span {
+    display: inline-block;
+    transform: rotate(-10deg);
+}
+
+/* Curve effect for each letter */
+.brush-text span:nth-child(1) { transform: rotate(-15deg); }
+.brush-text span:nth-child(2) { transform: rotate(-10deg); }
+.brush-text span:nth-child(3) { transform: rotate(-5deg); }
+.brush-text span:nth-child(4) { transform: rotate(0deg); }
+.brush-text span:nth-child(5) { transform: rotate(5deg); }
+.brush-text span:nth-child(6) { transform: rotate(10deg); }
+.brush-text span:nth-child(7) { transform: rotate(15deg); }
+
+
+
 
     </style>
 </head>
@@ -99,19 +137,27 @@
                        <div class="heading-box">Cricket Betting Partner!"</div>
                     </h1>
                     <p>
-                        <span class="heading-box">Explore top platforms</span> 
-                        <span class="heading-box">compare bonuses</span>
-                        <div class="hero-img position-relative">
-                            
-                            <div class="betting-banner">Start Betting Today!!!</div>
+                        <span class="heading-box"><i class="fa-solid fa-globe"></i>Explore top platforms</span> 
+                        <span class="heading-box"><i class="fa-solid fa-gift"></i>compare bonuses</span>
+                        <div class="brush-container">
+                            <img src="./images/brush-stroke.png" alt="Brush Stroke" class="brush-img">
+                            <svg width="150" height="50" class="brush-svg">
+                                <defs>
+                                    <path id="textPath" d="M10,40 Q75,5 140,40" fill="transparent"/>
+                                </defs>
+                                <text fill="white" font-size="14" font-weight="bold">
+                                    <textPath href="#textPath" startOffset="50%" text-anchor="middle">Start Betting Today!!!</textPath>
+                                </text>
+                            </svg>
                         </div>
+                        
                     </p>
 
                     <h2>Welcome to BET ON CRICKET</h2>
                     <p>Your ultimate hub for top betting sites, exclusive bonuses, and expert tips. Score big with trusted reviews, crypto options, and unbeatable offers!</p>
                     <div class="hero-buttons">
                         <a href="#" class="btn btn-dark">Explore Sites</a>
-                        <a href="#" class="btn btn-warning">Claim Exclusive Bonus</a>
+                        <a href="#" class="btn ">Claim Exclusive Bonus <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
