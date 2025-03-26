@@ -1,0 +1,152 @@
+
+        .logo-text{
+            font-weight: bolder;
+            color:#f97e03 ;
+        }
+        .bolder {
+            font-weight: bold;
+            color: black; /* Fill color */
+            -webkit-text-stroke: 0.5px #FF6500; /* Outline color */
+        }
+        
+        /* .nav-dropdown{
+            display: flex; 
+            align-items: center; 
+            gap: 1px;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-item{
+            display: flex; 
+            align-items: center; 
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        } */
+        .navbar-nav .nav-item {
+            margin: 0 15px; /* Adds spacing between menu items */
+        }
+        
+        .nav-dropdown {
+            display: flex;
+            align-items: center;
+            gap: 5px; /* Space between text and image */
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: black; /* Default text color */
+            transition: color 0.3s ease-in-out;
+        }
+        
+        .nav-dropdown:hover .nav-link,
+        .nav-dropdown:hover img {
+            color: #FF6500; /* Change text color on hover */
+            filter: brightness(0) saturate(100%) invert(40%) sepia(97%) saturate(450%) hue-rotate(360deg); /* Change image color */
+        }
+        
+
+        .nav-btn a{
+            font-weight: 500;
+
+        }
+        .nav-btn:first-child a{
+            padding-left: 43px !important;
+        }
+        .nav-btn:hover a{
+            color: white !important;
+            background-color: black;
+            border-radius: 10px;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #ffcc99 30%, #fff 100%);
+            padding: 0px 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 512px;
+            border-radius: 55px;
+            margin: 0 20px;
+        }
+        .hero-content {
+            max-width: 60%;
+        }
+        .hero-img {
+            max-width: 45%;
+        }
+        .hero-box {
+            background: #ffcc99;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .hero-buttons .btn {
+            margin-right: 10px;
+        }
+        .hero-icon{
+            padding-right: 5px;
+        }
+       
+        .heading-text{
+            color: #8a4704;
+        }
+        .heading-box{
+            background-color: rgba(255, 101, 0, 0.18); /* Orange background with 18% opacity */
+    border-radius: 16px;
+    font-weight: 400;
+    color: black; /* Ensures the text remains black */
+    padding: 5px 10px; /* Adds some padding for better aesthetics */
+    display: inline-block;
+        }
+        .brush-container {
+    position: absolute;
+    left: 60%; /* Adjust to overlay "compare bonuses" */
+    top: -10px; /* Move slightly up */
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 12rem;
+    margin-left: -16rem;
+}
+
+.brush-img {
+    width: 150px; /* Reduce size */
+    height: auto;
+    display: block;
+}
+
+.brush-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+   
+}
+ svg.brush-svg{
+    margin-top: -9rem;
+}
+.brush-text span {
+    display: inline-block;
+    transform: rotate(-10deg);
+}
+
+/* Curve effect for each letter */
+.brush-text span:nth-child(1) { transform: rotate(-15deg); }
+.brush-text span:nth-child(2) { transform: rotate(-10deg); }
+.brush-text span:nth-child(3) { transform: rotate(-5deg); }
+.brush-text span:nth-child(4) { transform: rotate(0deg); }
+.brush-text span:nth-child(5) { transform: rotate(5deg); }
+.brush-text span:nth-child(6) { transform: rotate(10deg); }
+.brush-text span:nth-child(7) { transform: rotate(15deg); }
+
+
+
+
+    
